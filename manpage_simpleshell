@@ -1,0 +1,22 @@
+NAME
+    simple_shell - A basic shell program
+
+SYNOPSIS
+    simple_shell
+
+DESCRIPTION
+    simple_shell is a minimalistic shell program that allows users to enter commands and executes
+    them. It provides a simple command-line interface, reads user input, and executes commands
+    entered by the user. The shell supports basic command execution, including the ability
+    to exit the shell.
+
+    The shell prompts the user with "$ " when running interactively. It reads user input, trims leading
+    and trailing whitespace, and then tokenizes and executes the entered command using the Tok function.
+    The shell continues to run until the user enters the "exit" command.
+
+EXAMPLES
+
+AUTHOR
+    Your Name
+    Your Email Address
+    Your Organization (if applicable)
