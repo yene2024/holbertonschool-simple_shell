@@ -5,18 +5,57 @@ SYNOPSIS
     simple_shell
 
 DESCRIPTION
-    simple_shell is a minimalistic shell program that allows users to enter commands and executes
-    them. It provides a simple command-line interface, reads user input, and executes commands
-    entered by the user. The shell supports basic command execution, including the ability
-    to exit the shell.
+    simple_shell is a minimalistic shell program that allows users to enter commands
+    and executes them. It provides a simple command-line interface, reads user input,
+    and executes commands entered by the user. The shell supports basic command execution,
+    including the ability to exit the shell.
 
-    The shell prompts the user with "$ " when running interactively. It reads user input, trims leading
-    and trailing whitespace, and then tokenizes and executes the entered command using the Tok function.
-    The shell continues to run until the user enters the "exit" command.
+    The shell prompts the user with "$ " when running interactively. It reads user input,
+    trims leading and trailing whitespace, and then tokenizes and executes the entered command
+    using the Tok function. The shell continues to run until the user enters the "exit" command.
+
+    Additionally, the shell provides the following functionalities:
+    - Displaying the environment variables using the "env" command.
+    - Stat command to check the existence of files.
 
 EXAMPLES
+    To run the simple shell, compile the source code and execute the resulting binary:
 
-AUTHOR
-    Your Name
-    Your Email Address
-    Your Organization (if applicable)
+    $ gcc -o simple_shell simple_shell.c
+    $ ./simple_shell
+
+    The shell will display a prompt:
+    $ 
+
+    Enter commands after the prompt and press Enter to execute them:
+    $ ls
+    file1.txt file2.txt
+    $ pwd
+    /home/user
+    $ echo "Hello, World!"
+    Hello, World!
+
+    To exit the shell, enter the "exit" command:
+    $ exit
+
+    Additional commands:
+    $ env       # Display environment variables
+    $ stat file # Check the existence of a file
+
+SEE ALSO
+    - Tok function: The function responsible for tokenizing and executing user commands.
+    - get_path function: Retrieve the full path of a command.
+    - exec_com function: Execute a command.
+    - free_token function: Free memory allocated for token arrays.
+    - free_paths_array function: Free memory allocated for paths arrays.
+    - child_creator function: Create a child process and execute a command.
+
+AUTHORS
+    Yeneishla Santiago
+    Personal email: yeneishla1524@gmail.com
+    Student email: 7365@holbertonstudents.com
+
+    Leandro Pagani
+    Personal email: leandropaganinieves@gmail.com
+    Student email: 7815@holbertonstudents.com
+
