@@ -1,4 +1,6 @@
 #include "shell.h"
+#include <stddef.h>
+#include <stdio.h>
 
 /**
  * get_path - Get the full path of a command
@@ -30,10 +32,11 @@ char *get_path(char *com_name)
 	sprintf(conpath, "%s%s", com_path, com_name);
 	if (access(conpath, X_OK) != 0)
 	{
-		perror("Command not found");
 		free(conpath);
 		return (NULL);
 	}
+	/*perror("Command not found");*/
+	/*free(conpath);*/
 	return (conpath);
 }
 
@@ -76,6 +79,7 @@ void Tok(char *tokI, char **env)
 	all_path = get_path(tokens[0]); /* Get the full path of the command */
 	if (all_path == NULL)
 	{
+		fprintf(stderr, "Command not found: %s\n", tokens[0]);
 		free_token(tokens, counter);
 		return;
 	}
