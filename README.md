@@ -3,7 +3,7 @@
     simple_shell - A basic shell program
 
 ## Introduction
-    This repository is a [Holberton School](https://www.holbertonschool.com/) project. The assignment involved
+    This repository is a [Holberton School](https://www.holbertonschool.com) project. The assignment involved
     creating a simple shell, similar to the Bourne Shell (sh) by Stephen Bourne, using C and a restricted set
     of standard library functions.
 
