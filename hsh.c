@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "simple_shell.c"
 /**
  * main - Entry point for the simple shell program
  * @argc: The argument count (unused)
