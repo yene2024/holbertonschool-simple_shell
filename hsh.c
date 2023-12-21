@@ -7,7 +7,7 @@
  * @envp: The environment variables
  * Return: Always 0
  */
-int main(int argc, char **argv, char **envp)
+int main(int argc __attribute__((unused)), char **argv, char **envp)
 {
 	char *user_input = NULL;
 	size_t input_size = 0;
@@ -18,7 +18,6 @@ int main(int argc, char **argv, char **envp)
 	{
 		if (isatty(0))
 			write(STDOUT_FILENO, "$ ", 2);
-		(void)argc; /* Suppress unused parameter warning */
 		(void)argv; /* Suppress unused parameter warning */
 		read_size = getline(&user_input, &input_size, stdin); /* Read user input */
 		if (read_size == -1)
