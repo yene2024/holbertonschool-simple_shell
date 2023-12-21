@@ -7,18 +7,18 @@
  * @envp: The environment variables
  * Return: Always 0
  */
-int main(int argc __attribute__((unused)), char **argv, char **envp)
+int main(int ac __attribute__((unused)), char **av, char **envp)
 {
 	char *user_input = NULL;
 	size_t input_size = 0;
 	ssize_t read_size;
 	char *trimmed_input;
 
+	(void)av;
 	while (1)
 	{
 		if (isatty(0))
 			write(STDOUT_FILENO, "$ ", 2);
-		(void)argv; /* Suppress unused parameter warning */
 		read_size = getline(&user_input, &input_size, stdin); /* Read user input */
 		if (read_size == -1)
 			break;
