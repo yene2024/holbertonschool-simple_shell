@@ -10,7 +10,7 @@
 #include <signal.h>
 #include <sys/stat.h>
 
-int main(int argc, char **argv, char **envp);
+int main(int argc __attribute__((unused)), char **argv, char **envp);
 char *trim(char *str);
 void Tok(char *tokI, char **env);
 void exec_com(char *com, char **env);
