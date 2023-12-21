@@ -1,15 +1,16 @@
-# holbertonschool-simple_shell
+# Simple Shell
+### holbertonschool-simple_shell
     simple_shell - A basic shell program
 
-# INTRODUCTION
-    This repository is a Holberton School project. The assignment involved creating a simple shell,
-    similar to the Bourne Shell (sh) by Stephen Bourne, using C and a restricted set of standard library
-    functions.
+## Introduction
+    This repository is a [Holberton School](https://www.holbertonschool.com/) project. The assignment involved
+    creating a simple shell, similar to the Bourne Shell (sh) by Stephen Bourne, using C and a restricted set
+    of standard library functions.
 
-# SYNOPSIS
+## Synopsis
     simple_shell
 
-# DESCRIPTION
+## Description
     simple_shell is a minimalistic shell program that allows users to enter commands
     and executes them. It provides a simple command-line interface, reads user input,
     and executes commands entered by the user. The shell supports basic command execution,
@@ -23,7 +24,7 @@
     - Displaying the environment variables using the "env" command.
     - Stat command to check the existence of files.
 
-# AUTHORS
+## Authors
     Yeneishla Santiago
     Personal email: yeneishla1524@gmail.com
     Student email: 7365@holbertonstudents.com
