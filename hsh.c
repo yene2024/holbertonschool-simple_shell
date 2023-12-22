@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
  * main - Entry point for the simple shell program
- * @argc: The argument count (unused)
- * @argv: The argument vector (unused)
+ * @ac: The argument count (unused)
+ * @av: The argument vector (unused)
  * @envp: The environment variables
  * Return: Always 0
  */
