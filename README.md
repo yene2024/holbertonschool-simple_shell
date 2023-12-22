@@ -24,6 +24,19 @@
     - Displaying the environment variables using the "env" command.
     - Stat command to check the existence of files.
 
+## Example
+    To run the simple shell, compile the source code and execute the resulting binary:
+
+    $ gcc -o simple_shell simple_shell.c
+    $ ./simple_shell
+
+    The shell will display a prompt:
+    $ 
+
+    Enter commands after the prompt and press Enter to execute them:
+    $ ls
+    file1.txt file2.txt
+
 ## Authors
     Yeneishla Santiago
     Personal email: yeneishla1524@gmail.com
